@@ -15,7 +15,7 @@ if st.button('submit'):
     'wind_speed':[wind_speed]
     })
     result=model.predict(dt)
-        if result>=0.5:
-            st.success('There will be rain today')
-        else:
-            st.success('There will be no rain')
+    if result>=0.5:
+        st.success('There will be rain today')
+    else:
+        st.success('There will be no rain')
