@@ -16,10 +16,10 @@ if st.button('submit'):
     })
     result=model.predict(dt)
     if result>=0.8:
-        st.success('There will be heavy rain today')
-    elif result>=0.3:
-        st.success('There will be rain today')
-    elif result<=0.3:
-        st.success('There will be light rain today')
+        st.success('There will be heavy rainfall today')
+    elif result>=0.4:
+        st.success('There will be moderate rainfall today')
+    elif result>=0.1:
+        st.success('There will be light rainfall today')
     else:
-        st.success('There will be no rain')
+        st.success('There will be no rainfall today')
