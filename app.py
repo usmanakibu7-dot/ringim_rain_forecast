@@ -21,5 +21,5 @@ if st.button('submit'):
         st.success('There will be moderate rainfall today')
     elif result>=1:
         st.success('There will be light rainfall today')
-    else result<=0:
+    else:
         st.success('There will be no rainfall today')
